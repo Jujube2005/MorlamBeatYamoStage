@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://1c6hcxkdsq1e"]
+
+[ext_resource type="Script" uid="uid://bcx2frdm1opqt" path="res://levels/game_ui.gd" id="1_451jp"]
+[ext_resource type="FontFile" uid="uid://bjj7gsvrru0rb" path="res://front/Daydream DEMO.otf" id="2_tpbhn"]
+
+[node name="GameUI" type="Control" unique_id=2024277642]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_451jp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1350417908]
+
+[node name="ScoreLable" type="RichTextLabel" parent="CanvasLayer" unique_id=151231085]
+unique_name_in_owner = true
+offset_left = 23.0
+offset_top = 18.0
+offset_right = 469.0
+offset_bottom = 87.0
+theme_override_constants/outline_size = 14
+theme_override_fonts/normal_font = ExtResource("2_tpbhn")
+theme_override_font_sizes/normal_font_size = 41
+text = "0 pts"
+scroll_active = false
+
+[node name="ComboLable" type="RichTextLabel" parent="CanvasLayer" unique_id=1869498538]
+unique_name_in_owner = true
+offset_left = 21.0
+offset_top = 90.0
+offset_right = 467.0
+offset_bottom = 159.0
+theme_override_constants/outline_size = 14
+theme_override_fonts/normal_font = ExtResource("2_tpbhn")
+theme_override_font_sizes/normal_font_size = 41
+text = "OK COMBO"
+scroll_active = false
